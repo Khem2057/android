@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">easy assist</string>
+    <string name="splash_logo_desc">Logo</string>
+    <string name="email_text">Email</string>
+    <string name="password_text">Password</string>
+    <string name="login_button_text">Signin</string>
+    <string name="login_hint">login to your Account</string>
+    <string name="forget_text">Forgot your password?</string>
+    <string name="login_prompt_text">Login to your account</string>
+    <string name="sing_text">Don\'t have an account?</string>
+    <string name="sup">Sign up</string>
+    <string name="address_text">Address</string>
+    <string name="contact_text">Contact</string>
+    <string name="create_your_acoount">Create Your Account</string>
+    <string name="full_name">Full Name</string>
+    <string name="confirm_text">Confirm Password</string>
+    <string name="easy">Easy</string>
+    <string name="assist">Assist\'s</string>
+
+</resources>

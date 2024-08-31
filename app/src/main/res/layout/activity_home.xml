@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="75dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="18dp"
+        android:contentDescription="@string/splash_logo_desc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.047"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/easy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="39dp"
+        android:text="@string/easy"
+        android:textColor="@color/green"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.479"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/assist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="39dp"
+        android:text="@string/assist"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        app:srcCompat="@drawable/notification"
+        android:layout_marginTop="33dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="80dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="TODO"/>
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="45dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/profil"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="25dp"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/order"
+        android:layout_width="415dp"
+        android:layout_height="30dp"
+        android:background="@drawable/red"
+        android:padding="2dp"
+        android:layout_marginTop="7dp"
+        android:text="Your Order is in progress.Get ready to Serve"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="We provide unforgettable and sustainable service."
+        android:textColor="@color/black"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:padding="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/order"/>
+
+    <com.denzcoskun.imageslider.ImageSlider
+        android:id="@+id/image_slider"
+        android:layout_width="wrap_content"
+        android:layout_height="230dp"
+        app:iss_auto_cycle="true"
+        app:iss_delay="1000"
+        app:iss_period="1000"
+        android:layout_marginTop="5dp"
+        app:iss_text_align="CENTER"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text" >
+
+    </com.denzcoskun.imageslider.ImageSlider>
+
+    <TextView
+        android:id="@+id/service1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text=" Our Services"
+        android:textColor="@color/green"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.09"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image_slider" />
+
+    <GridLayout
+        android:layout_width="350dp"
+        android:layout_height="230dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:columnCount="3"
+        android:rowCount="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="13dp"
+        app:layout_constraintTop_toBottomOf="@id/service1">
+
+        <LinearLayout
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:background="@drawable/tab_bkg"
+            android:backgroundTint="@color/Grey"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/plumbing" />
+
+            <TextView
+                android:id="@+id/plumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="8dp"
+                android:text="Plumber"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@drawable/tab_bkg"
+            android:backgroundTint="@color/Grey"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/electrician" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="8dp"
+                android:textColor="@color/black"
+                android:text="Electrician" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@drawable/tab_bkg"
+            android:backgroundTint="@color/Grey"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/cleaning" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="8dp"
+                android:textColor="@color/black"
+                android:text="Cleaning" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@drawable/tab_bkg"
+            android:backgroundTint="@color/Grey"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/mechanic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="8dp"
+                android:textColor="@color/black"
+                android:text="Mechanic" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@drawable/tab_bkg"
+            android:backgroundTint="@color/Grey"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/repair" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="8dp"
+                android:textColor="@color/black"
+                android:text="Ac service" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@drawable/tab_bkg"
+            android:backgroundTint="@color/Grey"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/technician" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="8dp"
+                android:textColor="@color/black"
+                android:text="Technician" />
+        </LinearLayout>
+    </GridLayout>
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </FrameLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@color/white"
+        app:itemIconTint="@color/black"
+        app:itemTextColor="@color/black"
+        app:menu="@menu/bottom_nav" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

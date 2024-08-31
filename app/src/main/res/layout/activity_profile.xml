@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profile"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="125dp"
+        android:layout_height="95dp"
+        app:srcCompat="@drawable/profil"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="32dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:text="kajal Thapa Magar"
+        android:textColor="@color/green"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginStart="160dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="110dp"
+        android:text="98********"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:layout_marginStart="190dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginStart="160dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/call"/>
+
+    <TextView
+        android:id="@+id/profile"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edit"
+        android:backgroundTint="@color/Grey"
+        android:drawableLeft="@drawable/profile"
+        android:padding="15dp"
+        android:text="My Profile"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:paddingStart="65dp"
+        android:drawablePadding="30dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="17dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView18"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/worker"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/edit"
+        android:backgroundTint="@color/Grey"
+        android:drawableLeft="@drawable/apply"
+        android:padding="15dp"
+        android:text="Apply for Worker"
+        android:paddingStart="65dp"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:drawablePadding="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile"/>
+
+    <TextView
+        android:id="@+id/privacy"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/edit"
+        android:backgroundTint="@color/Grey"
+        android:drawableLeft="@drawable/privacy"
+        android:padding="15dp"
+        android:text="Privacy policy"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:drawablePadding="30dp"
+        android:paddingStart="65dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginEnd="7dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/worker" />
+
+    <TextView
+        android:id="@+id/logout"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/edit"
+        android:backgroundTint="@color/Grey"
+        android:drawableLeft="@drawable/logout"
+        android:padding="15dp"
+        android:text="Logout"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:drawablePadding="30dp"
+        android:paddingStart="70dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginEnd="7dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/privacy"/>
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="162dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </FrameLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@color/white"
+        app:itemIconTint="@color/black"
+        app:itemTextColor="@color/black"
+        app:menu="@menu/bottom_nav"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

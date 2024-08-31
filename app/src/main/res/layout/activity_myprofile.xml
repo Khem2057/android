@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".myprofile"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/myp"
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/edit"
+        android:drawableLeft="@drawable/arrow"
+        android:drawablePadding="50dp"
+        android:padding="44dp"
+        android:paddingStart="45dp"
+        android:text="My Profile"
+        android:textColorHint="@color/green"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/edit1"
+        android:layout_marginTop="64dp"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="160dp"
+        android:layout_height="150dp"
+        app:srcCompat="@drawable/profil"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+
+
+    <TextView
+        android:id="@+id/nm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Kajal Thapa Magar"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <TextView
+        android:id="@+id/call"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/call"
+        android:padding="7dp"
+        android:text="98********"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:paddingStart="120dp"
+        android:drawablePadding="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nm"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/em"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="5dp"
+        android:drawableLeft="@drawable/email"
+        android:padding="7dp"
+        android:text="thapakajal061@gmail.com"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:paddingStart="80dp"
+        android:drawablePadding="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/call"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/loc"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="5dp"
+        android:drawableLeft="@drawable/location"
+        android:padding="7dp"
+        android:text="Gaindakot - 5,Nawalpur"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:paddingStart="87dp"
+        android:drawablePadding="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/em"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="162dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loc"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/logo"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
